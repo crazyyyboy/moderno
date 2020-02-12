@@ -87,13 +87,13 @@
          height: 56px;
          border: none;
          font-size: 14px;
-         font-weight: 500;
+         @include f500;
          padding-left: 25px;
          padding-right: 60px;
          
          &::placeholder{
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
          }
       }
       button{
@@ -155,7 +155,7 @@
       padding: 10px 30px;
       align-items: center;
       min-height: 99px;
-      font-weight: 500;
+      @include f500;
       border-bottom: 1px solid #e7ecf2;
    }
    &-name{
@@ -165,7 +165,7 @@
       color: $bg;     
       font-size: 18px;
       display: block;
-      font-weight: 700;
+      @include f700;
    }
    &-category{
       display: block;
@@ -175,7 +175,7 @@
    &-price{
       font-size: 20px;
       color: $bg;
-      font-weight: 700;
+      @include f700;
    }
    &-info{
       display: flex;
@@ -191,7 +191,7 @@
       
       span{
          font-size: 14px;
-         font-weight: 500;
+         @include f500;
          max-width: 225px;
          overflow: hidden;
       }
@@ -259,13 +259,58 @@
             outline: none;
          }
       }
-
    }
 }
 
- 
-
 //end product-slider
+
+//start advantages
+
+.advantages{
+   background-color: $bg;
+   padding: 110px 0;
+}
+.advantages__title{
+   color: #fff;
+}
+.advantages__inner{
+   display: flex;
+   justify-content: space-between;
+}
+.advantages__item{
+   max-width: 370px;
+   text-align: center;
+   padding: 0 15px;
+   cursor: pointer;
+   &:hover{
+      .advantages__item-title{
+         color: $green;
+      }
+   }
+   &-images{
+      width: 114px;
+      height: 114px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 30px;
+   }
+   &-title{
+      margin-bottom: 25px; 
+      @include f500;
+      color: #fff;
+      font-size: 24px;
+      transition: all .3s;
+
+   }
+   &-text{
+      font-size: 15px;
+   }
+}
+
+//end advantages
 
 
    
