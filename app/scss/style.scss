@@ -108,12 +108,13 @@
    }
 }
 .basket{
+   margin-right: 20px;
    span{
       background-color: $green;
    }
 }
 .user{
-   margin: 0 25px 0 20px;
+   margin-right: 25px;
    padding-right: 25px;
    position: relative;
    &::before{
@@ -188,6 +189,7 @@
    height: 0;
    overflow: hidden;
    transition: all .3s;
+   z-index: 1;
 }
 .basket__box,
 .notification__box,
@@ -293,6 +295,10 @@
 }
 .icons-color{
    color: $orange;
+}
+.header__btn-menu,
+.menu__btn{
+   display: none;
 }
 
 // end header
@@ -1125,14 +1131,14 @@
    }
 }
 
- 
-
-
-
 
 // end product-page
 
 
+
+
+
+@import 'media';
    
 
 
