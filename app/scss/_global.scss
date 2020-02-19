@@ -28,6 +28,7 @@ body{
    color: $text;
    font-weight: 400;
    overflow-x: hidden;
+   background-color: $gray;
 }
 .container{
    max-width: 1200px;
@@ -70,6 +71,7 @@ body{
 	flex: 0 0 auto;
 }
 .breadcrumbs{
+   background-color: $gray;
    &__inner{
       padding: 45px 0 40px;
    }
